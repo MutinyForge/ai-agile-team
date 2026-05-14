@@ -1,0 +1,1 @@
+print("Mutiny Forge environment is live")
