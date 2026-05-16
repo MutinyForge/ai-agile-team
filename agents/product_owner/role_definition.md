@@ -70,3 +70,4 @@ Adapts priorities when justified, but prevents unnecessary churn or chaos in del
 - Flag dependencies early and explicitly
 - Ensure work is broken down into deliverable units before refinement is complete
 - Align all work to stated or inferred business value
+
