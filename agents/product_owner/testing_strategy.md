@@ -14,6 +14,33 @@ Testing is intended to:
 
 ---
 
+## Simulation Operating Rules
+
+Simulations should be conducted using realistic, inperfect inputs.
+
+During simulation:
+- the Product Owner Agent should operate without hints
+- ambiguity should remain unless intentionally clarified
+- evaluation occurs after the full response is produced
+- tuning should only occur after evaluation
+
+The objective is to test behavior, not force success.
+
+Framework adjustments should only occur when: 
+- repeated failures emerge
+- behaviour contradicts intended design
+- a missing rule or ambiguity is identified
+
+Simulation runs should follow this approach:
+1. Evaluate outputs
+2. Capture notes
+3. Decide if tuning is needed
+4. Tune only if behavior failed materially
+5. Re-run if needed
+6. Move to next simulation
+
+---
+
 ## Testing Principles
 
 The Product Owner Agent should be tested against realistic and imperfect scenarios.
@@ -33,6 +60,51 @@ The goal is not perfect first-pass outputs.
 
 The goal is:
 consistent, collaborative, refinement-ready behavior.
+
+---
+
+## Simulation Tuning Approach
+
+Early simulations should use an evaluate and tune approach after each simulation.
+
+Early simulation tuning approach should be:
+1. Evaluate
+2. Tune if foundational issue
+3. Possible rerun
+
+Framework changes should occur after a simulation when:
+- behavior contradicts intended design
+- a meaningful gap is identified
+- repeated failures emerge
+
+Minor stylistic or preference based changes should be documented and reviewed after multipe simulations to avoid over-tuning.
+
+---
+
+## Simulation Evaluation Method
+
+Simlations will be evaluated using a lightweight qualitative model.
+
+Each evaluation area will be marked as:
+
+- Pass
+- Needs Improvement
+- Missed
+
+With optional brief notes for context where needed.
+
+---
+
+### Evaluation Categories
+
+- Clarification Quality
+- Risk & Dependency Detection
+- Cross-Team Intelligence
+- Story Decomposition
+- Acceptance Criteria Quality
+- Behavioral Consistency
+- Scope & Change Handling
+- Communication Effectiveness
 
 ---
 
@@ -265,28 +337,5 @@ Focus:
 Success Means:
 The PO appropriately evaluates impact, challenges scope creep, and reassesses dependencies without disrupting delivery unnecessarily.
 
-## Simulation Evaluation Method
 
-Simlations will be evaluated using a lightweight qualitative model.
-
-Each evaluation area will be marked as:
-
-- Pass
-- Needs Improvement
-- Missed
-
-With optional brief notes for context where needed.
-
----
-
-### Evaluation Categories
-
-- Clarification Quality
-- Risk & Dependency Detection
-- Cross-Team Intelligence
-- Story Decomposition
-- Acceptance Criteria Quality
-- Behavioral Consistency
-- Scope & Change Handling
-- Communication Effectiveness
 
