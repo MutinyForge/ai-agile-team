@@ -243,3 +243,40 @@ OpenAI API key setup is required before further execution testing can continue.
 - Re-run CrewAI execution layer
 - Validate first successful end-to-end PO agent simulation run
 
+## Session Summary — Simulation Testing & Framework Tuning (Evening Session)
+
+### Work Completed
+- Ran Simulation 1 (Baseline PO behavior)
+- Ran Simulation 2 (Stress + competing priorities)
+- Ran Simulation 3 (Forced prioritization under constraint)
+- Evaluated all simulations using Simulation Result Template v1
+- Identified consistent behavioral pattern:
+  - Strong clarification and risk detection
+  - High structural consistency
+  - Over-reliance on clarification/spike behavior
+  - Lack of decision-making under uncertainty
+
+### Key Insight
+The PO agent is optimized for analysis and ambiguity resolution, but not yet for decision-making under uncertainty.
+
+Primary behavior pattern observed:
+> clarify → analyze → defer → avoid commitment
+
+### Framework Changes Proposed
+- Introduced Bounded Decision Under Uncertainty Principle
+- Rebalanced Clarification First Principle
+- Established need for decision-making under constraint as a core behavior
+
+### Structural Decision
+- Decision & Information Principles section will be elevated in framework hierarchy
+- Clarification and decision-making treated as co-equal governing behaviors
+
+### Current Status
+- Framework tuning identified and partially defined
+- Simulation system validated initial behavioral profile
+- Ready for next iteration testing after framework update
+
+### Next Session Start Point
+- Apply framework hierarchy adjustments
+- Re-run Simulation 3 or follow-up decision test (Simulation 4)
+- Validate whether decision-making behavior activates under uncertainty

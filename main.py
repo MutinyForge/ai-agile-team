@@ -24,7 +24,7 @@ stakeholder_input = input("Enter stakeholder request:\n> ")
 # -----------------------------
 
 llm = LLM(
-    model="gpt-40-mini"
+    model="gpt-4o-mini"
 )
 
 po_agent = Agent(
